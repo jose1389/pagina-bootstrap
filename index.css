@@ -1,0 +1,76 @@
+.text-platzi {
+    /* definifimos una clase text-platzi y el !importatn es para que sobre ponga todo color */
+    color: #97c93e !important;
+}
+
+.btn-platzi{
+    background-color: #97c93e !important;
+    color: white;
+}
+
+/* Le hacemos un hover para que cuando el cursor pase sobre el boron cambie de color */
+.btn-platzi:hover{
+    background-color: #82ad36;
+}
+
+#header img{
+    /* Para poner un tamaño fijo a una imagen*/
+    width: 80px;
+}
+
+#main .carousel-inner img {
+    /* Para ponerle un porcentaje del alto de la pantalla */
+    max-height: 70vh;
+    /* para la imagen no se vea estirada */
+    object-fit: cover;
+    /* Decolorar un poco las imagenes */
+    filter: grayscale(70%);
+}
+
+#carousel{
+    position: relative;
+}
+
+#carousel .overlay{
+    position: absolute;
+    /* Para que lo que escribamos dentro de la imagen tenga estos parametros o que sean automaticos ya que no sabremos en dodne sera abierto */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Para que todo se vea un poco mas negro */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    /* Por si el texto no se ve agregar lo siguiente */
+    z-index: 1;
+}
+
+/* Para centrar el texto verticalmente en las imagenes */
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100%;
+}
+
+/* Definimos el tamano de las imagenes en las card */
+#speakers .container .row img{
+    max-height: 20vh;
+    object-fit: scale-down;
+}
+
+#place-time img{
+    max-width: 100%;
+
+}
+
+#place-time{
+    background-color: #343a40;
+    color: white;
+}
+
+#footer{
+    background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+}
+
+#footer a{
+    color: white;
+}
